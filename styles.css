@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 23% 25% 25% 25%;
+    grid-template-rows: 27% 37% 37%;
+    grid-gap: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.space {
+    margin: 10px;
+}
+.time {
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    grid-row: 1 /2;
+    grid-column: 1 /-1;
+    font-size: 5vh;
+    border:5px solid transparent;
+}
+.flexcont {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Time {
+    cursor:pointer;
+    font-family: 'Dancing Script', cursive;
+}
+
+.temperature {
+    grid-column: 2 /4;
+    grid-row: 2;
+    cursor: pointer;
+    font-size: 4.5vh;
+    line-height: 5.5vh;
+    background-color:transparent;
+    border:5px solid transparent;
+}
+
+table {
+    align-items: center;
+    width: 850px;
+}
+
+.forecast {
+    grid-column: 4;
+    grid-row:2 / 4;
+    cursor: pointer;
+    background-color:transparent;
+    border:5px solid transparent;
+    font-size: 4.5vh;
+    line-height: 5.5vh;
+}
+
+.WindSpeed {
+    grid-row:3;
+    grid-column: 2 /4;
+    cursor: pointer;
+    font-size: 4.5vh;
+    line-height: 5.5vh;
+    background-color:transparent;
+    border:5px solid transparent;
+    align-items: center;
+}
+
+.weather-details {
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    grid-row: 2 /4;
+    grid-column: 1 /2;
+    font-size: 4.5vh;
+    line-height: 5.5vh;
+    padding:0;
+    background-color:transparent;
+    border:5px solid transparent;
+}
+
+.weather-details:hover, .WindSpeed:hover, .temperature:hover, .forecast:hover, .time:hover{
+    border: 5px solid whitesmoke;
+}
+
+.weather-details, .WindSpeed, .temperature, .forecast, .time{
+    border-radius: 35px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.indent {
+    padding-left: 25px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="weather">
+            <div class="time">
+                <h4 class="date"><span class="DD">--</span>/<span class='MM'>--</span>/<span class='YY'>----</span></h4>
+                <h1><div class="Time"><span id='hour'>12</span>:<span id='minutes'>00</span></div></h1>
+                <h3 class="day"></h3>
+            </div>
+            <div class="weather-details">
+                <div id="cloud">Weather Icon</div>
+                <h5>Weather Description: <span class='weather-description'></span></h5>
+                Location:<span class='loc'></span>
+                <p>Precipitaion: <span id='Precipitaion'></span></p>
+                <p>Humidity: <span id='Humidity'></span></p>
+                <p>Pressure: <span id='Pressure'></span> Pa</p>
+                <p>Sun Rise: <span id='sun-rise'></span></p>
+                <p>Sun Set: <span id='sun-set'></span></p>
+            </div>
+            <div class="temperature">
+                <table>
+                    <tr><td>Current Temperature: <span id='ctemp'></span></td><td>UV-index: <span id='uv'></span></td></tr>
+                    <tr><td>Temperature: <span id='avgtemp'></span></td><td>Sun Hour: <span id='sunhour'></span></td></tr>
+                    <tr><td>Max Temperature: <span id='mtemp'></span></td><td>Total Snow: <span id='snow'></span> CM</td></tr>
+                    <tr><td>Min Temperature: <span id='mintemp'></span></td><td>Like: <span id='feel'></span></td></tr>
+                </table>
+            </div>
+            <div class="WindSpeed">
+                <table>
+                    <tr><td>Wind Speed: <span id="WindSpeed"></span></td><td>Visibility: <span id='visible'></span></td></tr>
+                    <tr><td>Wind Direction: <span id='dir'></span></td><td>Cloud Cover: <span id='cover'></span></td></tr>
+                    <tr><td>Wind Direction: <span id='deg'></span>°</td></tr>
+                </table>
+            </div>
+            <div class="forecast">
+                <div class="tomm">
+                    Date:<span id="tomdate"></span> 
+                    <p class="indent">Sun Rise: <span id='trise'></span></p>
+                    <p class="indent">Sun Set: <span id='tset'></span></p>
+                    <p class="indent">average temp: <span id='tavgtemp'></span></p>
+                    <p class="indent">UV Index: <span id='tuv'></span></p>
+                </div>
+                <div class="space"></div>
+                <div class="after t">
+                    Date:<span id="atdate"></span> 
+                    <p class="indent">Sun Rise: <span id='atrise'></span></p>
+                    <p class="indent">Sun Set: <span id='atset'></span></p>
+                    <p class="indent">avgtemp: <span id='atavgtemp'></span><p>
+                    <p class="indent">UV Index: <span id='atuv'></span></p>
+                </div>
+            </div>
+        </section>
+        <script src="weather.js"></script>
+    </body>
+</html>
